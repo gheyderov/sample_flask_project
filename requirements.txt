@@ -10,6 +10,7 @@ itsdangerous==2.1.2
 Jinja2==3.1.2
 Mako==1.2.2
 MarkupSafe==2.1.1
+mysqlclient==2.1.1
 SQLAlchemy==1.4.40
 Werkzeug==2.2.2
 zipp==3.8.1
