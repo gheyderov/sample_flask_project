@@ -113,14 +113,18 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									<p><b>Write Your Review</b></p>
 									
-									<form action="#">
+									<form action="" method="post">
+										{{form.csrf_token}}
 										<span>
-											<input type="text" placeholder="Your Name"/>
-											<input type="email" placeholder="Email Address"/>
+											{{form.name}}
+											{{form.email}}
+											<!-- <input type="text" placeholder="Your Name"/> -->
+											<!-- <input type="email" placeholder="Email Address"/> -->
 										</span>
-										<textarea name="" ></textarea>
+										{{form.message}}
+										<!-- <textarea name="" ></textarea> -->
 										<b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
-										<button type="button" class="btn btn-default pull-right">
+										<button type="submit" class="btn btn-default pull-right">
 											Submit
 										</button>
 									</form>
